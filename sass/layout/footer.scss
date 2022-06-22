@@ -1,0 +1,40 @@
+footer{
+    width: 100%;
+     padding:5px 0 20px 0px;
+    @include text-font;
+    color: white;
+    background-color: darken($color: $background-color, $amount: 75);
+    text-decoration: none;
+    
+    h4{
+        @include title-font;
+        font-size: 20px;
+        font-weight: lighter;
+        
+        margin: 10px 0 15px 20px;
+        
+    }
+
+    a{
+        text-decoration: none;
+        color:white; 
+
+    }
+
+    ul{
+        padding: 0;
+        list-style-type: none;
+        margin-left: 20px;
+        
+    }
+    li{
+        margin-top: 5px;
+    }
+    i{
+        display: inline-block;
+        width: 10px;
+        margin-right: 20px;
+        
+    }
+
+}

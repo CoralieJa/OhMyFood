@@ -1,0 +1,32 @@
+.restaurant-card{
+
+    width: 100%;
+    max-width: 400px;
+    height: 280px;
+    margin-bottom: 20px;
+    @include shadow-light;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+
+    img{
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+    }
+
+    h3{
+        margin-bottom: 2%;
+        margin-left: 10px;
+    }
+    &_place{
+        margin-left: 10px;
+    }
+    &:hover{
+        @include shadow;
+        
+    }
+    
+
+}

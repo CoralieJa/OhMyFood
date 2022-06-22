@@ -1,0 +1,29 @@
+@mixin text-font {
+    font-family : 'Roboto', Arial,Helvetica,sans-serif; 
+}
+@mixin title-font {
+    font-family: 'Shrikhand',Arial, Helvetica, sans-serif;
+    
+}
+@mixin btn {
+    height: 50px;
+    width: 40%;
+    padding: 15px 20px 15px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color:white;
+    @include text-font;
+    @include shadow;
+    font-size: 18px;
+    
+    background-size: auto;
+    background-image: linear-gradient(#E470DA,#9F5ADC);
+    
+}
+
+@mixin shadow{
+    box-shadow:0 5px 10px darken($color: $background-color, $amount: 20);
+}
+@mixin shadow-light{
+    box-shadow:0 5px 10px darken($color: $background-color, $amount: 10);
+}

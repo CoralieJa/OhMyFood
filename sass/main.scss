@@ -1,0 +1,10 @@
+@import"./utils/variables";
+@import"./utils/mixin";
+@import"./layout/header";
+@import "./layout/location";
+@import "./layout/presentation";
+@import "./layout/operating-mode";
+@import "./layout/restaurants";
+@import "./components/restaurant-card";
+@import "./components/heart";
+@import "./layout/footer.scss";
