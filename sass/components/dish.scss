@@ -1,0 +1,43 @@
+.dish{
+    @include shadow-light;
+    width:95%;
+    margin-left: 2.5%;
+    height:60px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    position: relative;
+    
+    
+    
+    
+
+    &_name{
+        font-weight: 600;
+        font-size: 17px;
+        padding-top: 10px;
+        margin-bottom: 3px;
+        margin-left: 10px;
+        overflow: hidden;
+        white-space:nowrap;
+        text-overflow: ellipsis;
+    }
+    &_description{
+        width: 80%;
+        font-weight: 300;
+        font-size: 13px;
+        margin-top: 0;
+        margin-left: 10px;
+        overflow: hidden;
+        white-space:nowrap;
+        text-overflow: ellipsis;
+        
+    }
+    &_price{
+        font-size: 14px;
+        font-weight: bold;
+        position:absolute;
+        right: 15px ;
+        top: 20px;
+    }
+    
+}

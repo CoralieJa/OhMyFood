@@ -6,18 +6,19 @@
     
 }
 @mixin btn {
-    height: 50px;
-    width: 40%;
-    padding: 15px 20px 15px 20px;
+    height: 40px;
+    width: 200px;
+    padding: 16px 20px 16px 20px;
     border-radius: 30px;
     text-decoration: none;
     color:white;
     @include text-font;
     @include shadow;
     font-size: 18px;
-    
+    text-align: center;
     background-size: auto;
     background-image: linear-gradient(#E470DA,#9F5ADC);
+    line-height: 40px;
     
 }
 
