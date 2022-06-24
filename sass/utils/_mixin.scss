@@ -27,4 +27,8 @@
 }
 @mixin shadow-light{
     box-shadow:0 5px 10px darken($color: $background-color, $amount: 10);
+
 }
+
+    
+        

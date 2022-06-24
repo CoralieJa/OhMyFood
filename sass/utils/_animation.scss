@@ -1,0 +1,147 @@
+@keyframes hideLoader{
+    from {
+        transform:translateY(0vh);
+    }
+    90% {
+        transform: translateY(0vh);
+    }
+    to {
+        transform: translateY(-100vh);
+    }
+ }
+
+ @keyframes ShowProduct {
+    from {
+        transform:translateX(0vw);
+        animation-timing-function: ease-out;
+    }
+    5%{
+        opacity:1;
+    }
+    25% {
+                       
+        transform: translateX(40vw);
+        opacity:1;
+        animation-timing-function: linear;
+    }
+    75%{
+        
+
+            transform: translateX(45vw);
+        opacity:1;
+    }
+    to {
+        transform: translateX(100vw);
+        opacity:1;
+    }
+ }
+
+
+@keyframes ShowProductTab{
+    from {
+        transform:translateX(0vw);
+        animation-timing-function: ease-out;
+    }
+    5%{
+        opacity:1;
+    }
+    25% {
+                       
+        transform: translateX(35vw);
+        opacity:1;
+    }
+    75%{
+        
+
+            transform: translateX(40vw);
+        opacity:1;
+    }
+    to {
+        transform: translateX(100vw);
+        opacity:1;
+    }
+}
+
+
+@keyframes ShowProductPhone{
+    from {
+        transform:translateX(0vw);
+        animation-timing-function: ease-out;
+    }
+    5%{
+        opacity:1;
+    }
+    25% {
+                       
+        transform: translateX(25vw);
+        opacity:1;
+        animation-timing-function: linear;
+
+    }
+    75%{
+        
+
+            transform: translateX(35vw);
+        opacity:1;
+        
+    }
+    to {
+        transform: translateX(100vw);
+        opacity:1;
+    }
+}
+
+
+
+ @keyframes OpacityReady {
+
+    from{
+        opacity:0;
+    }
+    69%{opacity:0;
+    }
+    70%{
+        opacity:1;
+    }
+    to{
+        opacity:1;
+    }
+ }
+
+ @keyframes OpacityRaw {
+
+    from{
+        opacity:1;
+    }
+    26%{opacity:1;
+    }
+    27%{
+        opacity:0;
+    }
+    to{
+        opacity:0;
+    }
+ }
+
+ @keyframes OpacityCooking {
+
+    from{
+        opacity:0;
+    }
+    35%{opacity:0;
+    }
+    36%{
+        opacity:1;
+    }
+
+    66%{
+        opacity:1;
+
+    }
+    67%{
+        opacity:0;
+    }
+    to{
+        opacity:0;
+    }
+ }

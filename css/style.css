@@ -189,14 +189,36 @@ header img {
 }
 
 .heart {
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  font-weight: 100;
   position: absolute;
+  font-size: 30px;
   right: 10%;
-  bottom: 12%;
+  bottom: 8%;
   cursor: pointer;
 }
 .heart_menu {
   bottom: 0;
-  top: 4%;
+  top: 2%;
+}
+.heart_empty {
+  z-index: 2;
+  position: absolute;
+}
+.heart_full {
+  z-index: 1;
+  position: absolute;
+  scale: 1;
+  transform: scale(0);
+  transition: 0.5s ease-in;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heart:hover .heart_full {
+  transform: scale(100%);
 }
 
 footer {
@@ -333,6 +355,263 @@ footer i {
   position: absolute;
   right: 15px;
   top: 20px;
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #F6F6F6;
+  transform: translateY(-100vh);
+  animation-name: hideLoader;
+  animation-duration: 3s;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+.loading h2 {
+  display: flex;
+  justify-content: center;
+  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.loading_raw-product_icons {
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  left: 0%;
+  transform-origin: left;
+  transform: translateX(100%);
+  animation-name: ShowProduct;
+  animation-duration: 1.25s;
+  animation-fill-mode: backwards;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .loading_raw-product_icons {
+    animation-name: ShowProductTab;
+  }
+}
+@media screen and (max-width: 768px) {
+  .loading_raw-product_icons {
+    animation-name: ShowProductPhone;
+  }
+}
+.loading_raw-product_text {
+  width: 100%;
+  top: 50%;
+  left: 0px;
+  position: absolute;
+  text-align: center;
+  opacity: 1;
+  transform: opacity;
+  animation-name: OpacityRaw;
+  animation-duration: 3s;
+  font-weight: 300;
+  color: #444444;
+}
+.loading_cooking_icons {
+  position: absolute;
+  top: 35%;
+  left: 0%;
+  opacity: 0;
+  transform: translateX(0.5vw);
+  animation-name: ShowProduct;
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .loading_cooking_icons {
+    animation-name: ShowProductTab;
+  }
+}
+@media screen and (max-width: 768px) {
+  .loading_cooking_icons {
+    animation-name: ShowProductPhone;
+  }
+}
+.loading_cooking_text {
+  width: 100%;
+  top: 50%;
+  left: 0px;
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  transform: opacity;
+  animation-name: OpacityCooking;
+  animation-duration: 3s;
+  font-weight: 300;
+  color: #444444;
+}
+.loading_ready_icons {
+  position: absolute;
+  top: 35%;
+  left: 0%;
+  opacity: 0;
+  transform: translateX(0.5vw);
+  animation-name: ShowProduct;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.25s;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .loading_ready_icons {
+    animation-name: ShowProductTab;
+  }
+}
+@media screen and (max-width: 768px) {
+  .loading_ready_icons {
+    animation-name: ShowProductPhone;
+  }
+}
+.loading_ready_text {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0px;
+  text-align: center;
+  opacity: 0;
+  transform: opacity;
+  animation-name: OpacityReady;
+  animation-duration: 3s;
+  font-weight: 300;
+  color: #444444;
+}
+.loading_waiting {
+  position: absolute;
+  width: 100%;
+  top: 45%;
+  left: 0px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+  color: #9356DC;
+}
+
+@keyframes hideLoader {
+  from {
+    transform: translateY(0vh);
+  }
+  90% {
+    transform: translateY(0vh);
+  }
+  to {
+    transform: translateY(-100vh);
+  }
+}
+@keyframes ShowProduct {
+  from {
+    transform: translateX(0vw);
+    animation-timing-function: ease-out;
+  }
+  5% {
+    opacity: 1;
+  }
+  25% {
+    transform: translateX(40vw);
+    opacity: 1;
+    animation-timing-function: linear;
+  }
+  75% {
+    transform: translateX(45vw);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100vw);
+    opacity: 1;
+  }
+}
+@keyframes ShowProductTab {
+  from {
+    transform: translateX(0vw);
+    animation-timing-function: ease-out;
+  }
+  5% {
+    opacity: 1;
+  }
+  25% {
+    transform: translateX(35vw);
+    opacity: 1;
+  }
+  75% {
+    transform: translateX(40vw);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100vw);
+    opacity: 1;
+  }
+}
+@keyframes ShowProductPhone {
+  from {
+    transform: translateX(0vw);
+    animation-timing-function: ease-out;
+  }
+  5% {
+    opacity: 1;
+  }
+  25% {
+    transform: translateX(25vw);
+    opacity: 1;
+    animation-timing-function: linear;
+  }
+  75% {
+    transform: translateX(35vw);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100vw);
+    opacity: 1;
+  }
+}
+@keyframes OpacityReady {
+  from {
+    opacity: 0;
+  }
+  69% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes OpacityRaw {
+  from {
+    opacity: 1;
+  }
+  26% {
+    opacity: 1;
+  }
+  27% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes OpacityCooking {
+  from {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0;
+  }
+  36% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 1;
+  }
+  67% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

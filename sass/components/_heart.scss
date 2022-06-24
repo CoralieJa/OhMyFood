@@ -1,12 +1,37 @@
 .heart{
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    font-weight: 100;
     position: absolute;
+    font-size: 30px;
     right: 10%;
-    bottom: 12%;
+    bottom: 8%;
     cursor:pointer;
     &_menu{
         bottom: 0;
-        top:4%;
+        top:2%;
         
     }
-    
+    &_empty{
+        z-index:2;
+        position:absolute;
+        
+    }
+    &_full{
+        z-index:1;
+        position:absolute;
+        
+        scale:1;
+        transform:scale(0);
+        transition: 0.5s ease-in;
+        background: -webkit-gradient(linear, left top, left bottom, from($color-primary), to($color-secondary));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+        
+    }
+    &:hover{
+        .heart_full{
+        transform: scale(100%);}
+    }
 }
