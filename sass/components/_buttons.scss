@@ -1,0 +1,8 @@
+.button{
+@include btn;
+&:hover{
+    @include shadow-dark;
+    opacity:0.9;
+    
+    }
+}

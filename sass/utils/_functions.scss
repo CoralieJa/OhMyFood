@@ -1,0 +1,12 @@
+
+/* dishes appartion for */
+
+@for $i from 1 through 10{
+    .dish#{$i}{
+        animation-name: Slidein;
+        animation-duration:250ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-delay: calc($i * 250ms);
+    }
+}

@@ -30,5 +30,8 @@
 
 }
 
-    
+ @mixin shadow-dark{
+    box-shadow:0 5px 10px darken($color: $background-color, $amount: 40);
+ }   
         
+ 

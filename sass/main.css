@@ -78,28 +78,14 @@ header img {
   line-height: 40px;
 }
 
-.operating-title {
-  margin-left: 20px;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-}
-@media screen and (min-width: 768px) {
-  .operating-title {
-    display: flex;
-    align-self: center;
-  }
-}
-
 .operating-mode {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   margin: 30px 0 30px 0;
 }
-@media screen and (min-width: 768px) {
-  .operating-mode {
-    flex-direction: row;
-    justify-content: space-around;
-  }
+.operating-mode h2 {
+  margin-left: 20px;
 }
 .operating-mode_btn {
   width: 80%;
@@ -114,12 +100,6 @@ header img {
   position: relative;
   margin-bottom: 20px;
   box-shadow: 0 5px 10px #c3c3c3;
-}
-@media screen and (min-width: 768px) {
-  .operating-mode_btn {
-    margin-left: 20px;
-    max-width: 420px;
-  }
 }
 .operating-mode_btn_number {
   width: 25px;
@@ -156,12 +136,6 @@ header img {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 768px) {
-  #restaurants h2 {
-    display: flex;
-    justify-content: center;
-  }
-}
 
 .restaurants_contents {
   width: 95%;
@@ -169,21 +143,12 @@ header img {
   flex-direction: column;
   align-items: center;
 }
-@media screen and (min-width: 768px) {
-  .restaurants_contents {
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-}
 
 .restaurant-card {
   width: 100%;
   max-width: 400px;
   height: 280px;
   margin-bottom: 20px;
-  margin-right: 25px;
   box-shadow: 0 5px 10px #dddddd;
   position: relative;
   background-color: white;
@@ -191,11 +156,6 @@ header img {
   overflow: hidden;
   text-decoration: none;
   color: black;
-}
-@media screen and (min-width: 768px) {
-  .restaurant-card {
-    max-width: 340px;
-  }
 }
 .restaurant-card .new {
   width: 78px;
@@ -215,7 +175,8 @@ header img {
 .restaurant-card img {
   width: 100%;
   height: 70%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .restaurant-card h3 {
   margin-bottom: 2%;
@@ -275,13 +236,6 @@ footer h4 {
   font-weight: lighter;
   margin: 10px 0 15px 20px;
 }
-@media screen and (min-width: 768px) {
-  footer h4 {
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-  }
-}
 footer a {
   text-decoration: none;
   color: white;
@@ -290,13 +244,6 @@ footer ul {
   padding: 0;
   list-style-type: none;
   margin-left: 20px;
-}
-@media screen and (min-width: 768px) {
-  footer ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
 footer li {
   margin-top: 5px;
@@ -322,13 +269,6 @@ footer i {
   margin: 15px 0 0 25px;
   padding: 30px 0 25px 0;
   font-size: 25px;
-}
-@media screen and (min-width: 768px) {
-  .menu h1 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
 }
 .menu h2 {
   margin-bottom: 35px;
@@ -375,36 +315,11 @@ footer i {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-wrap: nowrap;
-}
-@media screen and (min-width: 768px) and (max-width: 1100px) {
-  .menu_3courses {
-    align-items: center;
-  }
-}
-@media screen and (min-width: 1100px) {
-  .menu_3courses {
-    flex-direction: row;
-  }
-}
-@media screen and (min-width: 768px) {
-  .menu_3courses_starter {
-    width: 40%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .menu_3courses_main {
-    width: 40%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .menu_3courses_dessert {
-    width: 40%;
-  }
 }
 
 .banner-img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 300px;
   z-index: 1;
@@ -421,16 +336,6 @@ footer i {
   position: relative;
   overflow: hidden;
   opacity: 0;
-}
-@media screen and (min-width: 768px) and (max-width: 1100px) {
-  .dish {
-    min-width: 450px;
-  }
-}
-@media screen and (min-width: 1100px) {
-  .dish {
-    min-width: 300px;
-  }
 }
 .dish_check {
   width: 55px;
@@ -495,6 +400,136 @@ footer i {
   top: 20px;
 }
 
+.dish1 {
+  -webkit-animation-name: Slidein;
+          animation-name: Slidein;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
+}
+
+.dish2 {
+  -webkit-animation-name: Slidein;
+          animation-name: Slidein;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.dish3 {
+  -webkit-animation-name: Slidein;
+          animation-name: Slidein;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 750ms;
+          animation-delay: 750ms;
+}
+
+.dish4 {
+  -webkit-animation-name: Slidein;
+          animation-name: Slidein;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+.dish5 {
+  -webkit-animation-name: Slidein;
+          animation-name: Slidein;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1250ms;
+          animation-delay: 1250ms;
+}
+
+.dish6 {
+  -webkit-animation-name: Slidein;
+          animation-name: Slidein;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
+}
+
+.dish7 {
+  -webkit-animation-name: Slidein;
+          animation-name: Slidein;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1750ms;
+          animation-delay: 1750ms;
+}
+
+.dish8 {
+  -webkit-animation-name: Slidein;
+          animation-name: Slidein;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+}
+
+.dish9 {
+  -webkit-animation-name: Slidein;
+          animation-name: Slidein;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2250ms;
+          animation-delay: 2250ms;
+}
+
+.dish10 {
+  -webkit-animation-name: Slidein;
+          animation-name: Slidein;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2500ms;
+          animation-delay: 2500ms;
+}
+
 .loading {
   width: 100%;
   height: 100%;
@@ -504,8 +539,10 @@ footer i {
   left: 0;
   background-color: #F6F6F6;
   transform: translateY(-100vh);
-  animation-name: hideLoader;
-  animation-duration: 3s;
+  -webkit-animation-name: hideLoader;
+          animation-name: hideLoader;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 .loading h2 {
@@ -514,23 +551,6 @@ footer i {
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
-.loading_spinner {
-  position: absolute;
-  width: 100%;
-  top: 60%;
-  left: 0px;
-  display: flex;
-  justify-content: center;
-}
-.loading_spinner_item {
-  width: 50px;
-  height: 50px;
-  border: 5px solid #9356DC;
-  border-radius: 50%;
-  border-top-color: #99E2D0;
-  animation: spin 1s ease-in-out infinite;
-  animation: spin 1s ease-in-out infinite;
-}
 .loading_raw-product_icons {
   width: 100%;
   position: absolute;
@@ -538,18 +558,23 @@ footer i {
   left: 0%;
   transform-origin: left;
   transform: translateX(100%);
-  animation-name: ShowProduct;
-  animation-duration: 1.25s;
-  animation-fill-mode: backwards;
+  -webkit-animation-name: ShowProduct;
+          animation-name: ShowProduct;
+  -webkit-animation-duration: 1.25s;
+          animation-duration: 1.25s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .loading_raw-product_icons {
-    animation-name: ShowProductTab;
+    -webkit-animation-name: ShowProductTab;
+            animation-name: ShowProductTab;
   }
 }
 @media screen and (max-width: 768px) {
   .loading_raw-product_icons {
-    animation-name: ShowProductPhone;
+    -webkit-animation-name: ShowProductPhone;
+            animation-name: ShowProductPhone;
   }
 }
 .loading_raw-product_text {
@@ -560,8 +585,10 @@ footer i {
   text-align: center;
   opacity: 1;
   transform: opacity;
-  animation-name: OpacityRaw;
-  animation-duration: 3s;
+  -webkit-animation-name: OpacityRaw;
+          animation-name: OpacityRaw;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   font-weight: 300;
   color: #444444;
 }
@@ -571,19 +598,25 @@ footer i {
   left: 0%;
   opacity: 0;
   transform: translateX(0.5vw);
-  animation-name: ShowProduct;
-  animation-duration: 1.25s;
-  animation-fill-mode: forwards;
-  animation-delay: 1s;
+  -webkit-animation-name: ShowProduct;
+          animation-name: ShowProduct;
+  -webkit-animation-duration: 1.25s;
+          animation-duration: 1.25s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .loading_cooking_icons {
-    animation-name: ShowProductTab;
+    -webkit-animation-name: ShowProductTab;
+            animation-name: ShowProductTab;
   }
 }
 @media screen and (max-width: 768px) {
   .loading_cooking_icons {
-    animation-name: ShowProductPhone;
+    -webkit-animation-name: ShowProductPhone;
+            animation-name: ShowProductPhone;
   }
 }
 .loading_cooking_text {
@@ -594,8 +627,10 @@ footer i {
   text-align: center;
   opacity: 0;
   transform: opacity;
-  animation-name: OpacityCooking;
-  animation-duration: 3s;
+  -webkit-animation-name: OpacityCooking;
+          animation-name: OpacityCooking;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   font-weight: 300;
   color: #444444;
 }
@@ -605,19 +640,25 @@ footer i {
   left: 0%;
   opacity: 0;
   transform: translateX(0.5vw);
-  animation-name: ShowProduct;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-delay: 2.25s;
+  -webkit-animation-name: ShowProduct;
+          animation-name: ShowProduct;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2.25s;
+          animation-delay: 2.25s;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .loading_ready_icons {
-    animation-name: ShowProductTab;
+    -webkit-animation-name: ShowProductTab;
+            animation-name: ShowProductTab;
   }
 }
 @media screen and (max-width: 768px) {
   .loading_ready_icons {
-    animation-name: ShowProductPhone;
+    -webkit-animation-name: ShowProductPhone;
+            animation-name: ShowProductPhone;
   }
 }
 .loading_ready_text {
@@ -628,8 +669,10 @@ footer i {
   text-align: center;
   opacity: 0;
   transform: opacity;
-  animation-name: OpacityReady;
-  animation-duration: 3s;
+  -webkit-animation-name: OpacityReady;
+          animation-name: OpacityReady;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   font-weight: 300;
   color: #444444;
 }
@@ -644,6 +687,18 @@ footer i {
   color: #9356DC;
 }
 
+@-webkit-keyframes hideLoader {
+  from {
+    transform: translateY(0vh);
+  }
+  90% {
+    transform: translateY(0vh);
+  }
+  to {
+    transform: translateY(-100vh);
+  }
+}
+
 @keyframes hideLoader {
   from {
     transform: translateY(0vh);
@@ -655,9 +710,14 @@ footer i {
     transform: translateY(-100vh);
   }
 }
-@keyframes spin {
+@-webkit-keyframes Slidein {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(-10px);
   }
 }
 @keyframes Slidein {
@@ -670,10 +730,11 @@ footer i {
     transform: translateY(-10px);
   }
 }
-@keyframes ShowProduct {
+@-webkit-keyframes ShowProduct {
   from {
     transform: translateX(0vw);
-    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
   5% {
     opacity: 1;
@@ -681,7 +742,8 @@ footer i {
   25% {
     transform: translateX(40vw);
     opacity: 1;
-    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
   }
   75% {
     transform: translateX(45vw);
@@ -692,10 +754,35 @@ footer i {
     opacity: 1;
   }
 }
-@keyframes ShowProductTab {
+@keyframes ShowProduct {
   from {
     transform: translateX(0vw);
-    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  5% {
+    opacity: 1;
+  }
+  25% {
+    transform: translateX(40vw);
+    opacity: 1;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+  }
+  75% {
+    transform: translateX(45vw);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100vw);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes ShowProductTab {
+  from {
+    transform: translateX(0vw);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
   5% {
     opacity: 1;
@@ -713,10 +800,33 @@ footer i {
     opacity: 1;
   }
 }
-@keyframes ShowProductPhone {
+@keyframes ShowProductTab {
   from {
     transform: translateX(0vw);
-    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  5% {
+    opacity: 1;
+  }
+  25% {
+    transform: translateX(35vw);
+    opacity: 1;
+  }
+  75% {
+    transform: translateX(40vw);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100vw);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes ShowProductPhone {
+  from {
+    transform: translateX(0vw);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
   5% {
     opacity: 1;
@@ -724,7 +834,8 @@ footer i {
   25% {
     transform: translateX(25vw);
     opacity: 1;
-    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
   }
   75% {
     transform: translateX(35vw);
@@ -732,6 +843,44 @@ footer i {
   }
   to {
     transform: translateX(100vw);
+    opacity: 1;
+  }
+}
+@keyframes ShowProductPhone {
+  from {
+    transform: translateX(0vw);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  5% {
+    opacity: 1;
+  }
+  25% {
+    transform: translateX(25vw);
+    opacity: 1;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+  }
+  75% {
+    transform: translateX(35vw);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100vw);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes OpacityReady {
+  from {
+    opacity: 0;
+  }
+  69% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  to {
     opacity: 1;
   }
 }
@@ -749,6 +898,20 @@ footer i {
     opacity: 1;
   }
 }
+@-webkit-keyframes OpacityRaw {
+  from {
+    opacity: 1;
+  }
+  26% {
+    opacity: 1;
+  }
+  27% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
 @keyframes OpacityRaw {
   from {
     opacity: 1;
@@ -757,6 +920,26 @@ footer i {
     opacity: 1;
   }
   27% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes OpacityCooking {
+  from {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0;
+  }
+  36% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 1;
+  }
+  67% {
     opacity: 0;
   }
   to {
@@ -801,87 +984,4 @@ footer i {
 .button:hover {
   box-shadow: 0 5px 10px #909090;
   opacity: 0.9;
-}
-
-/* dishes appartion for */
-.dish1 {
-  animation-name: Slidein;
-  animation-duration: 250ms;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation-delay: 250ms;
-}
-
-.dish2 {
-  animation-name: Slidein;
-  animation-duration: 250ms;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation-delay: 500ms;
-}
-
-.dish3 {
-  animation-name: Slidein;
-  animation-duration: 250ms;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation-delay: 750ms;
-}
-
-.dish4 {
-  animation-name: Slidein;
-  animation-duration: 250ms;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation-delay: 1000ms;
-}
-
-.dish5 {
-  animation-name: Slidein;
-  animation-duration: 250ms;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation-delay: 1250ms;
-}
-
-.dish6 {
-  animation-name: Slidein;
-  animation-duration: 250ms;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation-delay: 1500ms;
-}
-
-.dish7 {
-  animation-name: Slidein;
-  animation-duration: 250ms;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation-delay: 1750ms;
-}
-
-.dish8 {
-  animation-name: Slidein;
-  animation-duration: 250ms;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation-delay: 2000ms;
-}
-
-.dish9 {
-  animation-name: Slidein;
-  animation-duration: 250ms;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation-delay: 2250ms;
-}
-
-.dish10 {
-  animation-name: Slidein;
-  animation-duration: 250ms;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation-delay: 2500ms;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */

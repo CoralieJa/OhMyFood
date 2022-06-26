@@ -18,6 +18,27 @@
         font-weight: bold;
     }
 
+    &_spinner{
+        position: absolute;
+        width:100%;
+        top:60%;
+        left: 0px;
+        display: flex;
+        justify-content: center;
+        &_item{
+            
+            
+            width: 50px;
+            height: 50px;
+            border: 5px solid $color-primary;
+            border-radius: 50%;
+            border-top-color: $color-tertiary;
+            animation: spin 1s ease-in-out infinite;
+            animation: spin 1s ease-in-out infinite;
+
+        }
+                
+    }
 
     &_raw-product{
         

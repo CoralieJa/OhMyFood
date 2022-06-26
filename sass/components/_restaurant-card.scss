@@ -4,6 +4,7 @@
     max-width: 400px;
     height: 280px;
     margin-bottom: 20px;
+    margin-right: 25px;
     @include shadow-light;
     position: relative;
     background-color: white;
@@ -11,6 +12,10 @@
     overflow: hidden;
     text-decoration: none;
     color: black;
+    @media screen and (min-width: 768px) {
+        max-width: 340px;
+       
+    }
     .new{
         width: 78px;
         height: 30px;

@@ -13,8 +13,15 @@
     margin: 15px 0 0 25px;
     padding:30px 0 25px 0;
     font-size: 25px;
+    @media screen and (min-width: 768px){
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
     }
     h2{
+        margin-bottom: 35px;
+        margin-left: 15px;
         font-size: 15px;
         font-weight: 300;
         text-transform: uppercase;
@@ -43,11 +50,35 @@
         @include btn;
     }
     &_3courses{
+        margin-top: 10px;
         margin-left: 10px;
         margin-right: 10px;
         margin-bottom: 60px;
         display:flex;
         flex-direction: column;
         justify-content: center;
+        flex-wrap: nowrap;
+        @media screen and (min-width: 768px) and (max-width: 1100px){
+            align-items: center;
+            
+        }
+        @media screen and (min-width: 1100px){
+            flex-direction: row;
+        }
+        &_starter{
+            @media screen and (min-width: 768px){
+                width:40%
+            }
+        }
+        &_main{
+            @media screen and (min-width: 768px){
+                width: 40%;
+            }
+        }
+       &_dessert{
+            @media screen and (min-width: 768px){
+                width:40%;
+            }
+       }
     }
 }
