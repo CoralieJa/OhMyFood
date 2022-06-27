@@ -250,7 +250,6 @@ header img {
 .heart_full {
   z-index: 1;
   position: absolute;
-  scale: 1;
   transform: scale(0);
   transition: 0.5s ease-in;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
@@ -258,7 +257,7 @@ header img {
   -webkit-text-fill-color: transparent;
 }
 .heart:hover .heart_full {
-  transform: scale(100%);
+  transform: scale(1);
 }
 
 footer {
@@ -559,7 +558,6 @@ footer i {
   position: absolute;
   text-align: center;
   opacity: 1;
-  transform: opacity;
   animation-name: OpacityRaw;
   animation-duration: 3s;
   font-weight: 300;
@@ -593,7 +591,6 @@ footer i {
   position: absolute;
   text-align: center;
   opacity: 0;
-  transform: opacity;
   animation-name: OpacityCooking;
   animation-duration: 3s;
   font-weight: 300;
@@ -627,7 +624,6 @@ footer i {
   left: 0px;
   text-align: center;
   opacity: 0;
-  transform: opacity;
   animation-name: OpacityReady;
   animation-duration: 3s;
   font-weight: 300;
