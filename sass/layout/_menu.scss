@@ -66,17 +66,17 @@
             flex-direction: row;
         }
         &_starter{
-            @media screen and (min-width: 768px){
+            @media screen and (min-width: 1100px){
                 width:40%
             }
         }
         &_main{
-            @media screen and (min-width: 768px){
+            @media screen and (min-width: 1100px){
                 width: 40%;
             }
         }
        &_dessert{
-            @media screen and (min-width: 768px){
+            @media screen and (min-width: 1100px){
                 width:40%;
             }
        }

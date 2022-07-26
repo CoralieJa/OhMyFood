@@ -387,17 +387,17 @@ footer i {
     flex-direction: row;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1100px) {
   .menu_3courses_starter {
     width: 40%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1100px) {
   .menu_3courses_main {
     width: 40%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1100px) {
   .menu_3courses_dessert {
     width: 40%;
   }
