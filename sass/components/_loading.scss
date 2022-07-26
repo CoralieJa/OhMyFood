@@ -7,9 +7,9 @@
     left:0;
     
     background-color: $background-color;
-    transform:translateY(-100vh);
     animation-name: hideLoader;
     animation-duration: 3s;
+    animation-fill-mode: forwards;
     @include text-font;
     h2{
         display: flex;
@@ -34,7 +34,6 @@
             border-radius: 50%;
             border-top-color: $color-tertiary;
             animation: spin 1s ease-in-out infinite;
-            animation: spin 1s ease-in-out infinite;
 
         }
                 
@@ -47,14 +46,14 @@
             position:absolute;
             top:35%;
             left:0%;
-            transform-origin: left;
-            transform:translateX(100%);
+            
             animation-name: ShowProduct;
             animation-duration: 1.25s ;
-            animation-fill-mode:backwards;
+            animation-fill-mode:forwards;
             @media screen and (min-width: 768px) and (max-width: 992px){ animation-name: ShowProductTab;}
             @media screen and (max-width: 768px){ animation-name: ShowProductPhone;}
-                
+            transform-origin: left;
+            transform:translateX(100%);
             }
         
 

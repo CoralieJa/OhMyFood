@@ -253,7 +253,6 @@ header img {
   transform: scale(0);
   transition: 0.5s ease-in;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -447,15 +446,14 @@ footer i {
   left: 30%;
   text-align: center;
   color: white;
-  transform: rotate(-360deg);
-  transition: transform 1s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   font-size: 25px;
 }
 .dish:hover .dish_check {
   transform: translateX(-55px);
 }
 .dish:hover .dish_check i {
-  transform: rotate(0deg);
+  transform: rotate(-360deg);
 }
 .dish:hover .dish_price {
   transform: translateX(-55px);
@@ -503,9 +501,9 @@ footer i {
   top: 0;
   left: 0;
   background-color: #F6F6F6;
-  transform: translateY(-100vh);
   animation-name: hideLoader;
   animation-duration: 3s;
+  animation-fill-mode: forwards;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 .loading h2 {
@@ -529,18 +527,17 @@ footer i {
   border-radius: 50%;
   border-top-color: #99E2D0;
   animation: spin 1s ease-in-out infinite;
-  animation: spin 1s ease-in-out infinite;
 }
 .loading_raw-product_icons {
   width: 100%;
   position: absolute;
   top: 35%;
   left: 0%;
-  transform-origin: left;
-  transform: translateX(100%);
   animation-name: ShowProduct;
   animation-duration: 1.25s;
-  animation-fill-mode: backwards;
+  animation-fill-mode: forwards;
+  transform-origin: left;
+  transform: translateX(100%);
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .loading_raw-product_icons {
@@ -664,7 +661,7 @@ footer i {
   }
   to {
     opacity: 1;
-    transform: translateY(-10px);
+    transform: translateY(-15px);
   }
 }
 @keyframes ShowProduct {
