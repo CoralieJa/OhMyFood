@@ -1,84 +1,81 @@
-.menu{
-    background-color: $background-color;
-    @include text-font;
-    position: relative;
-    z-index: 6;
-    margin-top: -100px;
-    border-radius: 40px 40px 0 0;
-    padding-bottom:100px;
-    
-    h1{
-        width:70%;
+.menu {
+  background-color: $background-color;
+  @include text-font;
+  position: relative;
+  z-index: 6;
+  margin-top: -100px;
+  border-radius: 40px 40px 0 0;
+  padding-bottom: 100px;
+
+  h1 {
+    width: 70%;
     @include title-font;
     margin: 15px 0 0 25px;
-    padding:30px 0 25px 0;
+    padding: 30px 0 25px 0;
     font-size: 25px;
-    @media screen and (min-width: 768px){
-        width:100%;
-        display: flex;
-        justify-content: center;
+    @media screen and (min-width: 768px) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
     }
-    }
-    h2{
-        margin-bottom: 35px;
-        margin-left: 15px;
-        font-size: 15px;
-        font-weight: 300;
-        text-transform: uppercase;
-        position: relative;
-        &:after{
-        content: "";
-        position: absolute;
-        width: 35px;
-        height: 1px;
-        bottom:0;
-        left: 0;
-        top:20px;
-        
-        border-bottom: 3px solid $color-tertiary; 
-        }
-    }
+  }
+  h2 {
+    margin-bottom: 35px;
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 35px;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      top: 20px;
 
-      &_btn{
-        display: flex;
-        
-        justify-content: center;
+      border-bottom: 3px solid $color-tertiary;
+    }
+  }
+
+  &_btn {
+    display: flex;
+
+    justify-content: center;
+  }
+  a {
+    @include btn;
+  }
+  &_3courses {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    @media screen and (min-width: 768px) and (max-width: 1100px) {
+      align-items: center;
+    }
+    @media screen and (min-width: 1100px) {
+      flex-direction: row;
+    }
+    &_starter {
+      @media screen and (min-width: 1100px) {
+        width: 40%;
       }
-    a{
-        
-
-        @include btn;
     }
-    &_3courses{
-        margin-top: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 60px;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: nowrap;
-        @media screen and (min-width: 768px) and (max-width: 1100px){
-            align-items: center;
-            
-        }
-        @media screen and (min-width: 1100px){
-            flex-direction: row;
-        }
-        &_starter{
-            @media screen and (min-width: 1100px){
-                width:40%
-            }
-        }
-        &_main{
-            @media screen and (min-width: 1100px){
-                width: 40%;
-            }
-        }
-       &_dessert{
-            @media screen and (min-width: 1100px){
-                width:40%;
-            }
-       }
+    &_main {
+      @media screen and (min-width: 1100px) {
+        width: 40%;
+      }
     }
+    &_dessert {
+      @media screen and (min-width: 1100px) {
+        width: 40%;
+      }
+    }
+  }
 }

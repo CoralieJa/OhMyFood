@@ -1,8 +1,7 @@
-.button{
-@include btn;
-&:hover{
+.button {
+  @include btn;
+  &:hover {
     @include shadow-dark;
-    opacity:0.9;
-    
-    }
+    opacity: 0.9;
+  }
 }

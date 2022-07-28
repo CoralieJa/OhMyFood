@@ -1,37 +1,32 @@
 @mixin text-font {
-    font-family : 'Roboto', Arial,Helvetica,sans-serif; 
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 @mixin title-font {
-    font-family: 'Shrikhand',Arial, Helvetica, sans-serif;
-    
+  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
 }
 @mixin btn {
-    height: 40px;
-    width: 200px;
-    padding: 16px 20px 16px 20px;
-    border-radius: 30px;
-    text-decoration: none;
-    color:white;
-    @include text-font;
-    @include shadow;
-    font-size: 18px;
-    text-align: center;
-    background-size: auto;
-    background-image: linear-gradient(#E470DA,#9F5ADC);
-    line-height: 40px;
-    
+  height: 40px;
+  width: 200px;
+  padding: 16px 20px 16px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  @include text-font;
+  @include shadow;
+  font-size: 18px;
+  text-align: center;
+  background-size: auto;
+  background-image: linear-gradient(#e470da, #9f5adc);
+  line-height: 40px;
 }
 
-@mixin shadow{
-    box-shadow:0 5px 10px darken($color: $background-color, $amount: 20);
+@mixin shadow {
+  box-shadow: 0 5px 10px darken($color: $background-color, $amount: 20);
 }
-@mixin shadow-light{
-    box-shadow:0 5px 10px darken($color: $background-color, $amount: 10);
-
+@mixin shadow-light {
+  box-shadow: 0 5px 10px darken($color: $background-color, $amount: 10);
 }
 
- @mixin shadow-dark{
-    box-shadow:0 5px 10px darken($color: $background-color, $amount: 40);
- }   
-        
- 
+@mixin shadow-dark {
+  box-shadow: 0 5px 10px darken($color: $background-color, $amount: 40);
+}

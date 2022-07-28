@@ -1,147 +1,149 @@
-.loading{
+.loading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+
+  background-color: $background-color;
+  animation-name: hideLoader;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  @include text-font;
+  h2 {
+    display: flex;
+    justify-content: center;
+    @include title-font;
+    font-weight: bold;
+  }
+
+  &_spinner {
+    position: absolute;
     width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 1000;
-    top:0;
-    left:0;
-    
-    background-color: $background-color;
-    animation-name: hideLoader;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    @include text-font;
-    h2{
-        display: flex;
-        justify-content: center;
-        @include title-font;
-        font-weight: bold;
+    top: 60%;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    &_item {
+      width: 50px;
+      height: 50px;
+      border: 5px solid $color-primary;
+      border-radius: 50%;
+      border-top-color: $color-tertiary;
+      animation: spin 1s ease-in-out infinite;
+    }
+  }
+
+  &_raw-product {
+    &_icons {
+      width: 100%;
+      position: absolute;
+      top: 35%;
+      left: 0%;
+
+      animation-name: ShowProduct;
+      animation-duration: 1.25s;
+      animation-fill-mode: forwards;
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+        animation-name: ShowProductTab;
+      }
+      @media screen and (max-width: 768px) {
+        animation-name: ShowProductPhone;
+      }
+      transform-origin: left;
+      transform: translateX(100%);
     }
 
-    &_spinner{
-        position: absolute;
-        width:100%;
-        top:60%;
-        left: 0px;
-        display: flex;
-        justify-content: center;
-        &_item{
-            
-            
-            width: 50px;
-            height: 50px;
-            border: 5px solid $color-primary;
-            border-radius: 50%;
-            border-top-color: $color-tertiary;
-            animation: spin 1s ease-in-out infinite;
+    &_text {
+      width: 100%;
+      top: 50%;
+      left: 0px;
+      position: absolute;
+      text-align: center;
+      opacity: 1;
 
-        }
-                
+      animation-name: OpacityRaw;
+      animation-duration: 3s;
+      font-weight: 300;
+      color: darken($color: $background-color, $amount: 70);
     }
+  }
 
-    &_raw-product{
-        
-        &_icons{
-            width: 100%;
-            position:absolute;
-            top:35%;
-            left:0%;
-            
-            animation-name: ShowProduct;
-            animation-duration: 1.25s ;
-            animation-fill-mode:forwards;
-            @media screen and (min-width: 768px) and (max-width: 992px){ animation-name: ShowProductTab;}
-            @media screen and (max-width: 768px){ animation-name: ShowProductPhone;}
-            transform-origin: left;
-            transform:translateX(100%);
-            }
-        
+  &_cooking {
+    &_icons {
+      position: absolute;
+      top: 35%;
+      left: 0%;
+      opacity: 0;
+      transform: translateX(0.5vw);
 
-        &_text{
-            
-            width:100%;
-            top:50%;
-            left:0px;
-            position: absolute;
-            text-align: center;
-            opacity:1;
-           
-            animation-name: OpacityRaw;
-            animation-duration: 3s;
-            font-weight: 300;
-            color: darken($color: $background-color, $amount: 70);
-        }
-
+      animation-name: ShowProduct;
+      animation-duration: 1.25s;
+      animation-fill-mode: forwards;
+      animation-delay: 1s;
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+        animation-name: ShowProductTab;
+      }
+      @media screen and (max-width: 768px) {
+        animation-name: ShowProductPhone;
+      }
     }
+    &_text {
+      width: 100%;
+      top: 50%;
+      left: 0px;
+      position: absolute;
+      text-align: center;
+      opacity: 0;
 
-    &_cooking{
-        &_icons{
-            position: absolute;
-            top:35%;
-            left:0%;
-            opacity: 0;
-            transform:translateX(0.5vw) ;
-            
-            animation-name: ShowProduct;
-            animation-duration: 1.25s ;
-            animation-fill-mode:forwards;
-            animation-delay: 1s;
-            @media screen and (min-width: 768px) and (max-width: 992px){ animation-name: ShowProductTab;}
-            @media screen and (max-width: 768px){ animation-name: ShowProductPhone;}
+      animation-name: OpacityCooking;
+      animation-duration: 3s;
+      font-weight: 300;
+      color: darken($color: $background-color, $amount: 70);
+    }
+  }
 
-        }
-        &_text{
-            width:100%;
-            top:50%;
-            left:0px;
-            position: absolute;
-            text-align: center; 
-            opacity: 0;
-            
-            animation-name: OpacityCooking;
-            animation-duration: 3s;
-            font-weight: 300;
-            color: darken($color: $background-color, $amount: 70);
-        }
+  &_ready {
+    &_icons {
+      position: absolute;
+      top: 35%;
+      left: 0%;
+      opacity: 0;
+      transform: translateX(0.5vw);
+      animation-name: ShowProduct;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      animation-delay: 2.25s;
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+        animation-name: ShowProductTab;
+      }
+      @media screen and (max-width: 768px) {
+        animation-name: ShowProductPhone;
+      }
     }
+    &_text {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 0px;
+      text-align: center;
+      opacity: 0;
 
-    &_ready{
-        &_icons{
-            position: absolute;
-            top:35%;
-            left:0%;
-            opacity: 0;
-            transform:translateX(0.5vw) ;
-            animation-name: ShowProduct;
-            animation-duration: 1s ;
-            animation-fill-mode:forwards;
-            animation-delay: 2.25s;
-            @media screen and (min-width: 768px) and (max-width: 992px){ animation-name: ShowProductTab;}
-            @media screen and (max-width: 768px){ animation-name: ShowProductPhone;}
-        }
-        &_text{
-        position: absolute;
-        width:100%;
-        top:50%;
-        left:0px;
-        text-align: center;
-        opacity:0;
-        
-        animation-name: OpacityReady;
-        animation-duration: 3s;
-        font-weight: 300;
-        color: darken($color: $background-color, $amount: 70);
-        }
+      animation-name: OpacityReady;
+      animation-duration: 3s;
+      font-weight: 300;
+      color: darken($color: $background-color, $amount: 70);
     }
-    &_waiting{
-        position: absolute;
-        width:100%;
-        top:45%;
-        left:0px;
-        text-align: center;
-        font-weight: bolder;
-        font-size: 20px;
-        color: $color-primary;
-        
-    }
+  }
+  &_waiting {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    left: 0px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    color: $color-primary;
+  }
 }

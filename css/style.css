@@ -25,7 +25,7 @@ header img {
 #location {
   width: 100%;
   height: 60px;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   display: flex;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 500;
@@ -41,7 +41,7 @@ header img {
 
 .presentation {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   width: 100%;
   height: 300px;
   padding-top: 5%;
@@ -74,7 +74,7 @@ header img {
   font-size: 18px;
   text-align: center;
   background-size: auto;
-  background-image: linear-gradient(#E470DA, #9F5ADC);
+  background-image: linear-gradient(#e470da, #9f5adc);
   line-height: 40px;
 }
 
@@ -105,7 +105,7 @@ header img {
   width: 80%;
   height: 70px;
   margin-left: 10%;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   font-size: 18px;
   border-radius: 20px;
   font-weight: bold;
@@ -129,7 +129,7 @@ header img {
   text-align: center;
   font-size: 15px;
   font-weight: lighter;
-  background-color: #9356DC;
+  background-color: #9356dc;
   color: white;
   position: absolute;
   left: -10px;
@@ -145,12 +145,12 @@ header img {
   background-color: #f2eafb;
 }
 .operating-mode_btn:hover .operating-mode_btn_icon {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 #restaurants {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 30px 0 20px 0;
   padding-left: 20px;
   display: flex;
@@ -203,7 +203,7 @@ header img {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -243,10 +243,6 @@ header img {
   right: 10%;
   bottom: 10%;
   cursor: pointer;
-  /* &:focus{*/
-  /* .heart_full{*/
-  /*  transform: scale(1);}*/
-  /* }*/
 }
 .heart_menu {
   bottom: 0;
@@ -261,7 +257,7 @@ header img {
   position: absolute;
   transform: scale(0);
   transition: 0.5s ease-in;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -317,7 +313,7 @@ footer i {
 }
 
 .menu {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   position: relative;
   z-index: 6;
@@ -355,7 +351,7 @@ footer i {
   bottom: 0;
   left: 0;
   top: 20px;
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 3px solid #99e2d0;
 }
 .menu_btn {
   display: flex;
@@ -373,7 +369,7 @@ footer i {
   font-size: 18px;
   text-align: center;
   background-size: auto;
-  background-image: linear-gradient(#E470DA, #9F5ADC);
+  background-image: linear-gradient(#e470da, #9f5adc);
   line-height: 40px;
 }
 .menu_3courses {
@@ -446,7 +442,7 @@ footer i {
   height: 100%;
   top: 0px;
   right: -55px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   position: absolute;
   transition: transform 0.2s ease-in-out;
 }
@@ -510,7 +506,7 @@ footer i {
   z-index: 1000;
   top: 0;
   left: 0;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   animation-name: hideLoader;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -533,9 +529,9 @@ footer i {
 .loading_spinner_item {
   width: 50px;
   height: 50px;
-  border: 5px solid #9356DC;
+  border: 5px solid #9356dc;
   border-radius: 50%;
-  border-top-color: #99E2D0;
+  border-top-color: #99e2d0;
   animation: spin 1s ease-in-out infinite;
 }
 .loading_raw-product_icons {
@@ -645,7 +641,7 @@ footer i {
   text-align: center;
   font-weight: bolder;
   font-size: 20px;
-  color: #9356DC;
+  color: #9356dc;
 }
 
 @keyframes hideLoader {
@@ -799,7 +795,7 @@ footer i {
   font-size: 18px;
   text-align: center;
   background-size: auto;
-  background-image: linear-gradient(#E470DA, #9F5ADC);
+  background-image: linear-gradient(#e470da, #9f5adc);
   line-height: 40px;
 }
 .button:hover {
