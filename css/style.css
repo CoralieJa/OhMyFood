@@ -179,6 +179,7 @@ header img {
 }
 
 .restaurant-card {
+  display: inline;
   width: 100%;
   max-width: 400px;
   height: 280px;
@@ -189,7 +190,6 @@ header img {
   background-color: white;
   border-radius: 20px;
   overflow: hidden;
-  text-decoration: none;
   color: black;
 }
 @media screen and (min-width: 768px) {
@@ -227,6 +227,11 @@ header img {
 .restaurant-card:hover {
   box-shadow: 0 5px 10px #c3c3c3;
 }
+.restaurant-card_link {
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+}
 
 .heart {
   width: 30px;
@@ -236,8 +241,12 @@ header img {
   position: absolute;
   font-size: 30px;
   right: 10%;
-  bottom: 8%;
+  bottom: 10%;
   cursor: pointer;
+  /* &:focus{*/
+  /* .heart_full{*/
+  /*  transform: scale(1);}*/
+  /* }*/
 }
 .heart_menu {
   bottom: 0;
@@ -258,6 +267,7 @@ header img {
 }
 .heart:hover .heart_full {
   transform: scale(1);
+  z-index: 3;
 }
 
 footer {
